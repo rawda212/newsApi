@@ -1,0 +1,26 @@
+.page2-container{
+    margin-top: 100px;
+}
+.left-card {
+ 
+    width: 390px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .right-card {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+  }
+  .right-card .card-body {
+    white-space: normal; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 250px;
+  }  
+  
