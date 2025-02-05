@@ -75,7 +75,7 @@ const Page2 = ({ news }) => {
           <div className="row">
             {news.slice(6).map((item, index) => (
               <div className="col-md-6 mb-3" key={index}>
-                <div className="card left-card"> {/* إضافة كلاس لتحديد النمط */}
+                <div className="card left-card"> 
                   <img    style={{height:"50%"}}
                     src={item?.urlToImage || "https://via.placeholder.com/300"}
                     className="card-img-top"
@@ -100,7 +100,7 @@ const Page2 = ({ news }) => {
           <div className="row">
             {news.slice(0,-4).map((item, index) => (
               <div className="col-12 mb-1" key={index}>
-                <div className="card right-card "> {/* إضافة كلاس لتحديد النمط */}
+                <div className="card right-card ">
                   <div className="row g-0">
                     <div className="col-md-4">
                       <img
@@ -114,7 +114,7 @@ const Page2 = ({ news }) => {
                       <div className="card-body">
                         <h5 className="card-title">{item?.title || "No Title Available"}</h5>
                         <p className="card-text">
-                          {item?.description || "No Description Available."}
+                          {item?.description?.slice(0.30) || "No Description Available."}
                         </p>
                       </div>
                     </div>
